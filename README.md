@@ -7,4 +7,18 @@ Stage is a 2D simulation platform. Based on the repo shown below and the latest 
 > https://github.com/ros-simulation/stage_ros
 
 ## how to use
-git clone 
+```bash
+git clone git@github.com:running-mars/stage_ros_modified.git
+mkdir -p catkin_ws/src
+catkin_init_workspace
+cd ..
+mv stage_ros_modified/stage_ros-add_pose_and_crash catkin_ws/src/
+catkin_make
+```
+
+## how to run 
+```bash
+cd catkin_ws
+source devel/setup.bash
+rosrun stage_ros_add_pose_and_crash stageros <world file>
+```
