@@ -12,7 +12,7 @@ git clone git@github.com:running-mars/stage_ros_modified.git
 mkdir -p catkin_ws/src
 catkin_init_workspace
 cd ..
-mv stage_ros_modified/stage_ros-add_pose_and_crash catkin_ws/src/
+mv stage_ros_modified/stage_ros-add_pose_and_crash_<slow/fast> catkin_ws/src/
 catkin_make
 ```
 
